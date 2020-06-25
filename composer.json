@@ -6,7 +6,11 @@
     "type": "project",
     "require": {
         "php": "^7.2.5",
-        "laravel/lumen-framework": "^7.0"
+        "flipbox/lumen-generator": "^7.0",
+        "irazasyed/larasupport": "^1.0",
+        "laravel/lumen-framework": "^7.0",
+        "spatie/laravel-fractal": "^5.7",
+        "tymon/jwt-auth": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.9.1",
@@ -30,7 +34,8 @@
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "disable-tls": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
