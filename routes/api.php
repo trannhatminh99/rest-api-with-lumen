@@ -13,14 +13,10 @@
 
 
 
+$router->get('/', ['uses' => 'ExampleController@index']);
 
-
-$router->group(['prefix' => 'api'], function () use ($router) {
+$router->group(function () use ($router) {
     $router->post('login', ['as' => 'auth.login', 'uses' => 'Auth\LoginController@login']);
     $router->get('/logout', ['uses' => 'Auth\LoginController@logout']);
-
-
-    $router->get('users', ['uses' => 'UserController@index']);
-
 });
 
